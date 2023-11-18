@@ -8,5 +8,10 @@
             "matches": ["https://*.youtube.com/watch?*"],
             "js": ["script.js"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "logo_16.png",
+        "48": "logo_48.png",
+        "128": "logo_128.png"
+    }
 }
