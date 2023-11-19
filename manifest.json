@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "More YouTube Shortcuts",
-    "version": "0.1.0",
-    "description": "More keyboard shortcuts for skipping ahead 30 seconds, liking & disliking videos, & more",
+    "version": "1.0.0",
+    "description": "More YouTube keyboard shortcuts including fast forward by 30 seconds, like & dislike the video, & more",
     "content_scripts": [
         {
             "matches": ["https://*.youtube.com/watch?*"],

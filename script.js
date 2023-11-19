@@ -1,6 +1,4 @@
 
-const videoElement = document.querySelector('.html5-video-container > video');
-
 // get like or dislike button
 // tpye: string either 'like' or 'dislike' 
 const getLDButton = (type) => {
@@ -11,6 +9,7 @@ const getLDButton = (type) => {
 document.body.addEventListener('keydown', (event) => {
     // skip 30 seconds when pressing 's' key
     if (event.key === 's') {
+        const videoElement = document.querySelector('.html5-video-container > video');
         const newTime = videoElement.currentTime + 30;
         videoElement.currentTime = Math.min(newTime, videoElement.duration);
     } 
@@ -18,6 +17,8 @@ document.body.addEventListener('keydown', (event) => {
     else if (event.key === 'r'){
         if (document.getElementById('clarify-box')) 
             document.getElementById('clarify-box').remove();
+        if (document.getElementById('middle-row')) 
+            document.getElementById('middle-row').remove();
     }
     // like video with u key
     else if (event.key === 'u'){
